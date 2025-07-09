@@ -1,213 +1,552 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Batubo Victory | Software Engineer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Victory's Frontend Developer Portfolio — Built with HTML, CSS, and JavaScript.">
-		<meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Frontend Developer, Software Engineer" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Batubo Victory, a Frontend Web Developer creating responsive, user-centered websites using HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="web developer portfolio, frontend development, HTML, CSS, JavaScript, responsive websites, Batubo Victory"
+    />
+    <meta name="author" content="Batubo Victory" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Batubo Victory | Frontend Web Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Batubo Victory, Frontend Web Developer. Showcasing responsive, user-focused projects built with HTML, CSS, and JavaScript."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Batubo Victory" />
+    <meta
+      name="twitter:title"
+      content="Batubo Victory | Frontend Web Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Batubo Victory, Frontend Web Developer. Showcasing responsive, user-focused projects built with HTML, CSS, and JavaScript."
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="image/chijioke-nwabasili.webp"
+      fetchpriority="high"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/src/css/style.css" />
+    
+    <title>Batubo Victory | Frontend Web Developer Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a href="/" id="logo-text">Victory B.</a>
+        <!-- Hamburger menu -->
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        />
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Navbar -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">About Me</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#techStack">Tech Stack</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <h1
+          id="hero-heading"
+          data-aos="slide-down"
+          data-aos-duration="1200"
+          data-aos-easing="ease-out"
+        >
+          Hello <span class="wave">👋</span> I'm
+          <span class="hero-name-text">Batubo Victory</span>
+        </h1>
+        <p
+          class="hero-subtext"
+          data-aos="slide-right"
+          data-aos-duration="1200"
+          data-aos-easing="ease-out"
+        >
+          A <span>Frontend Web Developer</span> creating clean, responsive
+          websites that look good, load fast, and feel intuitive to use.
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="projects.html"
+            class="view-project-btn"
+            data-aos="fade-in"
+            data-aos-duration="1200"
+            data-aos-delay="1200"
+            ><i class="fas fa-folder-open"></i> View My Work</a
+          >
+          <a
+            href="assets/chijioke-nwabasili-resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resume-btn"
+            data-aos="fade-in"
+            data-aos-duration="1200"
+            data-aos-delay="1200"
+          >
+            <i class="fas fa-download"></i> Download My Resume
+          </a>
+        </div>
+      </div>
+    </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- About -->
+    <section id="about" data-aos="fade-up" data-aos-delay="100">
+      <div class="container about-content">
+        <div class="about-text">
+          <h2 class="about-title">About Me</h2>
+          <p class="about-description" data-aos="fade-up" data-aos-delay="200">
+            I'm Batubo Victory, a Frontend Web Developer based in Nigeria. I
+            build user-centered websites that are visually clear, technically
+            solid, and aligned with each brand's goals using core web
+            technologies:
+            <span class="html-text">HTML</span>,
+            <span class="css-text">CSS</span>, and
+            <span class="javascript-text">JavaScript</span>.
+          </p>
+          <p class="about-description" data-aos="fade-up" data-aos-delay="200">
+            My focus is on creating digital experiences that not only look good
+            but also load fast, adapt across devices, and feel intuitive to real
+            users. I pay close attention to the small details that shape how
+            people interact with a site, so it feels as smooth to use as it
+            looks.
+          </p>
+          <p class="about-description" data-aos="fade-up" data-aos-delay="200">
+            What matters to me isn't just writing code, but understanding
+            <em>why</em> something is built a certain way and explaining those
+            choices clearly, whether I'm sharing ideas with teammates or
+            aligning a project with business needs.
+          </p>
+          <p class="about-description" data-aos="fade-up" data-aos-delay="200">
+            I'm always learning and I value collaboration, especially the kind
+            that brings technical and non-technical people together to solve
+            real problems. If you're looking for a developer who builds with
+            intent and cares about user experience from start to finish, feel
+            free to check out my work and get in touch.
+          </p>
+        </div>
+        <div class="about-image-container">
+          <div class="about-image-inner">
+            <img
+              class="about-image front-image"
+              src="image/chijioke-nwabasili.webp"
+              alt="Headshot of Batubo Victory"
+            />
+            <img
+              class="about-image back-image"
+              src="image/chijioke-nwabasili-1.webp"
+              alt="Alternate headshot of Batubo Victory"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Batubo Victory<br>Software Engineer | Frontend Developer | Dedicated Coder</h1>
-							<p>Frontend Developer | UI Builder | CEO @ <a href="https://phoenixdomainagency.netlify.app"><strong>Phoenix Domain</strong></a></p>
-							<p>
-							Building beautiful, responsive websites with HTML, CSS, and JavaScript.
-						</p>
-							<ul class="actions">
-								<li><a href="#one" class="button primary scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h2 class="services-title">What I Can Do for You</h2>
+        <h3 class="services-subtitle">
+          Frontend solutions that load fast, look great, and work seamlessly
+          across devices.
+        </h3>
+        <div class="services-grid">
+          <article class="service-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-laptop-code"></i>
+            <h4 class="service">Web Development</h4>
+            <p class="service-description">
+              I design and build custom landing pages, business sites, and
+              portfolios that are lightweight, visually clear, and fully
+              responsive.
+            </p>
+          </article>
+          <article class="service-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-mobile-alt"></i>
+            <h4 class="service">Responsive Design</h4>
+            <p class="service-description">
+              Crafting layouts that adjust smoothly on desktops, tablets, and
+              smartphones so your site always feels intuitive and easy to use.
+            </p>
+          </article>
+          <article class="service-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fas fa-tools"></i>
+            <h4 class="service">Website Maintenance</h4>
+            <p class="service-description">
+              Keeping your site fresh and running well with content updates,
+              small UI fixes, and performance improvements.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/1.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>About Me</h2>
-									<p>Hello! I'm Victory, a passionate frontend developer and founder of <a href="https://phoenixdomainagency.netlify.app" target="_blank"><strong>Phoenix Domain</strong></a>. <br>I love turning creative ideas into clean, responsive websites using HTML, CSS, and JavaScript.</p>
-									<p>I'm currently focused on helping small businesses get online. Let’s build something amazing together.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button primary">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section class="wrapper style1 align-center"style="background-color: rgb(22, 22, 22);min-height:50vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
-  <div class="content" >
-    <h2>Code in Action</h2>
-<p>Responsive websites and frontend interfaces that showcase my skills in HTML, CSS, JavaScript, and design thinking.</p>
-		
-			<a href="#portfolio" class="button primary">View Projects</a>
-  </div>
-</section>
-						
-						<section id="portfolio">
-							
-							<div class="content">
-								<div class="inner">
-									 <h2>Cuisiny – Food Blog Website</h2>
-        <p>A clean, food-themed blog site made with HTML and CSS. Features recipe sections, a homepage layout, and smooth scrolling.</p>
-									 <ul class="actions">
-          <li><a href="https://cuisiny.netlify.app" class="button primary" target="_blank">Live Site</a></li>
-          <li><a href="https://github.com/yourusername/cuisiny" class="button primary" target="_blank">Code</a></li>
-        </ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									 <h2>Nova Brews Café Website</h2>
-        <p>A fully responsive website for a fictional café. Built with just HTML and CSS, featuring a custom layout, gallery, and testimonials.</p>
-        <ul class="actions">
-          <li><a href="https://nova-brews.netlify.app" class="button primary" target="_blank">Live Site</a></li>
-          <li><a href="https://github.com/yourusername/nova-brews" class="button primary" target="_blank">GitHub</a></li>
-        </ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									 <h2>Luna Beauty Studio Website</h2>
-        <p>A sleek and elegant 5-page website built for a beauty and interior design brand. This responsive site highlights services, gallery, booking form, and shipping details. Created using HTML, CSS, and a bit of Bootstrap for layout flexibility.</p>
-				        <ul class="actions">
-          <li><a href="https://nova-brews.netlify.app" class="button primary" target="_blank">Live Site</a></li>
-          <li><a href="https://github.com/yourusername/nova-brews" class="button primary" target="_blank">GitHub</a></li>
-        </ul>
-								</div>
-							</div>
-						</section>
-					</section>
-					
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="skills-title">Tools & Technologies I Use</h2>
+        <p class="skills-subtitle">
+          These are the tools I work with to build sites that look good, load
+          fast, and work smoothly on any device.
+        </p>
+        <div class="skills-grid">
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="image/html-logo.svg"
+              alt="HTML Logo - Markup Language"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+            <h3 class="skill">HTML</h3>
+            <p class="skill-description">
+              Writing clean, semantic markup for accessible and maintainable
+              content.
+            </p>
+          </article>
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="image/css-logo.svg"
+              alt="CSS Logo - Styling & Layout"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+            <h3 class="skill">CSS</h3>
+            <p class="skill-description">
+              Custom styling, animations, and layouts that adapt to any screen
+              size.
+            </p>
+          </article>
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="image/javascript-logo.svg"
+              alt="JavaScript Logo - Programming Language"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+            <h3 class="skill">JavaScript</h3>
+            <p class="skill-description">
+              Bringing sites to life with interactivity, dynamic content, and
+              logic.
+            </p>
+          </article>
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="image/git-logo.svg"
+              alt="Git Logo"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+            <h3 class="skill">Git</h3>
+            <p class="skill-description">
+              Tracking changes and managing versions in solo and team projects.
+            </p>
+          </article>
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="image/github-logo.svg"
+              alt="GitHub Logo"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+            <h3 class="skill">GitHub</h3>
+            <p class="skill-description">
+              Sharing code, collaborating, and organizing project work.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-				<!-- Two -->
-					<section id="techStack" class="wrapper style3 fade-up">
-						<section class="wrapper style1 align-center">
-  <div class="inner">
-    <h2>Tools & Technologies</h2>
-    <p>Here are the tools I use to design and build modern, responsive websites:</p>
-    <div class="items style1 medium onscroll-fade-in">
-      <ul style="list-style: none; color:gold;font-size:2rem;display:grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));gap:2rem;">
-				<li><i class="fab fab fa-html5"></i>  Html5</li>
-				<li><i class="fab fab fa-css3"></i>  CSS3</li>
-				<li><i class="fab fab fa-js-square"></i>  JavaScript</li>
-				<li><i class="fab fab fa-bootstrap"></i>  Bootstrap</li>
-				<li><i class="fab fab fa-git"></i>  Git</li>
-				<li><i class="fab fa-github"></i>  Github</li>
-				<li><i class="fab fab fa-figma"></i>  Figma</li>	
-							
-			</ul>
-    </div>
-  </div>
-</section>
+    <!-- Projects  -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="projects-title">Selected Projects</h2>
+        <h3 class="projects-subtitle">
+          A few examples of my work built with clean code, responsive layouts,
+          and user-focused design.
+        </h3>
+        <div class="projects-grid">
+          <!-- NurtureNest website project card -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-image">
+              <img
+                src="image/nurturenest-website-project-hero.webp"
+                alt="Screenshot of NurtureNest website project"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-content">
+              <h4 class="project-name">NurtureNest</h4>
+              <p class="project-description">
+                A modern, user-friendly concept website for a fictional
+                childcare brand. Built with HTML, CSS, and JavaScript, it helps
+                parents explore programs, meet the team, and view daily moments.
+                Key features include interactive modals, a Meet the Team
+                section, a Daily Moments photo gallery, and testimonials. This
+                project shows my focus on clean layouts and designing an
+                inviting experience for families.
+              </p>
+              <div class="project-tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+              </div>
+              <div class="project-link-buttons">
+                <a
+                  href="https://nurturenestcare.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-link-btn"
+                >
+                  <i class="fas fa-link"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/devceejay/nurturenestcare"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="github-link-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- HelioCore website project card -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-image">
+              <img
+                src="image/heliocore-website-project-hero.webp"
+                alt="Screenshot of HelioCore website project"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-content">
+              <h4 class="project-name">HelioCore</h4>
+              <p class="project-description">
+                A corporate-style concept website for a fictional solar energy
+                company. Built with HTML, CSS, and JavaScript, it focuses on
+                clarity and trust to create a professional brand presence. Key
+                features include service listings, project highlights,
+                testimonials, and clear calls-to-action. This project highlights
+                my ability to design service-focused sites that build
+                credibility and encourage inquiries.
+              </p>
+              <div class="project-tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+              </div>
+              <div class="project-link-buttons">
+                <a
+                  href="https://heliocore.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-link-btn"
+                >
+                  <i class="fas fa-link"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/devceejay/heliocore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="github-link-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-					</section>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-subtitle">
+          Interested in working together? Let's chat about how I can help bring
+          your ideas to life.
+        </p>
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <ul class="social-links">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a
+                  href="mailto:chijioke.nwabasili2021@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Email"
+                  >Email Me
+                </a>
+              </li>
+              <li>
+                <i class="fab fa-linkedin"></i>
+                <a
+                  href="https://www.linkedin.com/in/chijioke-nwabasili"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Linkedin"
+                  >LinkedIn
+                </a>
+              </li>
+              <li>
+                <i class="fab fa-github"></i>
+                <a
+                  href="https://github.com/devceejay"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  >GitHub
+                </a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a
+                  href="tel:+2347038592615"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Phone"
+                  >Call Me</a
+                >
+              </li>
+            </ul>
+            <h4>Location</h4>
+            <p>Lagos, Nigeria · Available globally</p>
+          </div>
+          <!-- Contact form -->
+          <form
+            data-aos="fade-up"
+            data-aos-delay="200"
+            id="contact-form"
+            action="https://formspree.io/f/xyzwkqav"
+            method="post"
+            aria-label="Contact Form"
+          >
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                required
+                id="name"
+                placeholder="Your full name"
+                autocomplete="off"
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                required
+                id="email"
+                placeholder="your.email@example.com"
+                autocomplete="off"
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                required
+                id="message"
+                rows="5"
+                minlength="10"
+                maxlength="200"
+                placeholder="Tell me about your project"
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              title="Click to send your message"
+              aria-label="Send your message"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+        <p id="contact-thankyou" class="thankyou-message" role="status" hidden>
+          ✅ Thanks for reaching out! Your message has been sent. I'll get back
+          to you soon.
+        </p>
+      </div>
+    </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contact Me</h2>
-							<p>Have a project in mind or just want to connect? I'd love to hear from you.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button primary submit">Send Message</a></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>6, Eze R.E Amadi Avenue<br />
-											Rumuokwachi, Portharcourt<br />
-											Rivers State, Nigeria</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">victorybatubo76@gmail.com</a>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Batubo Victory</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Footer -->
+    <footer>
+      <p class="copyright">
+        &copy; 2025 Batubo Victory. All rights reserved.
+      </p>
+      <a
+        href="#hero"
+        aria-label="Click to scroll to the top"
+        class="back-to-top-btn"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+    <script src="assets/src/js/main.js"></script>
+  </body>
 </html>
