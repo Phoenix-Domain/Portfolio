@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Batubo Victory, a Frontend Web Developer creating responsive, user-centered websites using HTML, CSS, and JavaScript."
+      content="Portfolio of Batubo Victory, a software engineer and Frontend Developer creating responsive, business value oriented websites using HTML, CSS, and JavaScript."
     />
     <meta
       name="keywords"
-      content="web developer portfolio, frontend development, HTML, CSS, JavaScript, responsive websites, Batubo Victory"
+      content="web developer portfolio, frontend development, software engineering, HTML, CSS, JavaScript, responsive websites, business value, Batubo Victory"
     />
     <meta name="author" content="Batubo Victory" />
     <meta name="robots" content="index, follow" />
     <meta
       property="og:title"
-      content="Batubo Victory | Frontend Web Developer Portfolio"
+      content="Batubo Victory | Software Engineer | Frontend Developer Portfolio"
     />
     <meta
       property="og:description"
-      content="Portfolio of Batubo Victory, Frontend Web Developer. Showcasing responsive, user-focused projects built with HTML, CSS, and JavaScript."
+      content="Portfolio of Batubo Victory, Software Engineer and Frontend Developer. Showcasing responsive, user-focused projects built with HTML, CSS, and JavaScript."
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Batubo Victory" />
     <meta
       name="twitter:title"
-      content="Batubo Victory | Frontend Web Developer Portfolio"
+      content="Batubo Victory | Software Engineer | Frontend Developer Portfolio"
     />
     <meta
       name="twitter:description"
       content="Portfolio of Batubo Victory, Frontend Web Developer. Showcasing responsive, user-focused projects built with HTML, CSS, and JavaScript."
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/0.webp"
+      fetchpriority="high"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,7 +47,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="image/favicon-32x32.png"
+      href="assets/images/0.webp"
     />
     <link
       rel="stylesheet"
@@ -50,10 +56,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- AOS CSS -->
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/src/css/style.css" />
-    <title>Batubo Victory | Frontend Web Developer Portfolio</title>
+    
+    <title>Batubo Victory | Software Engineer | Frontend Developer Portfolio</title>
   </head>
   <body>
     <header>
@@ -78,7 +85,7 @@
         <nav>
           <ul class="nav-links">
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -88,114 +95,170 @@
     <main class="page-content">
       <!-- Projects  -->
       <section id="projects">
-        <div class="container">
-          <h2 class="projects-title">Selected Projects</h2>
-          <h3 class="projects-subtitle">
-            A few examples of my work built with clean code, responsive layouts,
-            and user-focused design.
-          </h3>
-          <div class="projects-grid">
-            <!-- NurtureNest website project card -->
-            <article
-              class="project-card"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="project-card-image">
-                <img
-                  src="image/nurturenest-website-project-hero.webp"
-                  alt="Screenshot of NurtureNest website project"
-                  loading="lazy"
-                />
+      <div class="container">
+        <h2 class="projects-title">Client Work</h2>
+        <h3 class="projects-subtitle">
+            A selection of real-world client projects demonstrating my ability to deliver clean, responsive, and user-focused solutions.
+        </h3>
+        <div class="projects-grid">
+          
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-image">
+              <img
+                src="assets/images/6.webp"
+                alt="Screenshot of G&3J Designs"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-content">
+              <h4 class="project-name">G&3J Designs</h4>
+              <p class="project-description">
+                A modern, user-friendly concept website for G&3J Designs, an interior and graphic design studio. Built with HTML, CSS, and JavaScript, the site showcases the studio’s services, design philosophy, and portfolio in a clean, elegant layout.
+              </p>
+              <p class="project-description">
+                Key features include interactive service modals, a curated project gallery, client testimonials and a contact form.
+              </p>
+              <p class="project-description">
+                This project highlights my ability to create visually appealing, responsive experiences that reflect a brand’s aesthetic and connect with design-conscious clients.
+              </p>
+              <div class="project-tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
               </div>
-              <div class="project-card-content">
-                <h4 class="project-name">NurtureNest</h4>
-                <p class="project-description">
-                  A modern, user-friendly concept website for a fictional
-                  childcare brand. Built with HTML, CSS, and JavaScript, it
-                  helps parents explore programs, meet the team, and view daily
-                  moments. Key features include interactive modals, a Meet the
-                  Team section, a Daily Moments photo gallery, and testimonials.
-                  This project shows my focus on clean layouts and designing an
-                  inviting experience for families.
-                </p>
-                <div class="project-tools">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JAVASCRIPT</span>
-                </div>
-                <div class="project-link-buttons">
-                  <a
-                    href="https://nurturenestcare.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="live-link-btn"
-                  >
-                    <i class="fas fa-link"></i> Live Demo</a
-                  >
-                  <a
-                    href="https://github.com/devceejay/nurturenestcare"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github-link-btn"
-                  >
-                    <i class="fab fa-github"></i> Code
-                  </a>
-                </div>
+              <div class="project-link-buttons">
+                <a
+                  href="https://phoenix-domain.github.io/G-3J-Designs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-link-btn"
+                >
+                  <i class="fas fa-link"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/Phoenix-Domain/G-3J-Designs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="github-link-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
               </div>
-            </article>
-            <!-- HelioCore website project card -->
-            <article
-              class="project-card"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="project-card-image">
-                <img
-                  src="image/heliocore-website-project-hero.webp"
-                  alt="Screenshot of HelioCore website project"
-                  loading="lazy"
-                />
+            </div>
+          </article>
+          
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-image">
+              <img
+                src="assets/images/1.webp"
+                alt="Screenshot of Nova Brews"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-content">
+              <h4 class="project-name">Nova Brews</h4>
+              <p class="project-description">
+                A warm, inviting concept website for Nova Brews, a fictional specialty café. Built with HTML, CSS, and JavaScript, the site blends cozy aesthetics with clear structure to reflect the brand’s welcoming atmosphere.
+              </p>
+              <p class="project-description">
+                Key features include a dynamic menu section, featured brews, customer testimonials, and strong calls-to-action for reservations and loyalty sign-ups.
+              </p>
+              <p class="project-description">
+                This project showcases my ability to design customer-focused websites that build trust, highlight offerings, and encourage in-store visits or online engagement.
+              </p>
+              <div class="project-tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
               </div>
-              <div class="project-card-content">
-                <h4 class="project-name">HelioCore</h4>
-                <p class="project-description">
-                  A corporate-style concept website for a fictional solar energy
-                  company. Built with HTML, CSS, and JavaScript, it focuses on
-                  clarity and trust to create a professional brand presence. Key
-                  features include service listings, project highlights,
-                  testimonials, and clear calls-to-action. This project
-                  highlights my ability to design service-focused sites that
-                  build credibility and encourage inquiries.
-                </p>
-                <div class="project-tools">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JAVASCRIPT</span>
-                </div>
-                <div class="project-link-buttons">
-                  <a
-                    href="https://heliocore.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="live-link-btn"
-                  >
-                    <i class="fas fa-link"></i> Live Demo</a
-                  >
-                  <a
-                    href="https://github.com/devceejay/heliocore"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github-link-btn"
-                  >
-                    <i class="fab fa-github"></i> Code
-                  </a>
-                </div>
+              <div class="project-link-buttons">
+                
+                <a
+                  href="https://phoenix-domain.github.io/Phoenix-Cafe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-link-btn"
+                >
+                  <i class="fas fa-link"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/Phoenix-Domain/Phoenix-Cafe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="github-link-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
               </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="projects-title">Personal Projects</h2>
+        <h3 class="projects-subtitle">
+          A few of my own builds — crafted with precision and purpose to create value through responsive design, clean architecture, and user-first thinking.
+        </h3>
+        <div class="projects-grid">
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-image">
+              <img
+                src="assets/images/TestiFlow.webp"
+                alt="Screenshot of TestiFlow project"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-content">
+              <h4 class="project-name">TestiFlow</h4>
+              <p class="project-description">
+                This is a simple, professional app that shows rotating customer testimonials — one click at a time — from a real dataset.
+              </p>
+              <p class="project-description">
+                It's features include:
+                <ul>
+                  <li class="project-description">
+                    A reusable component for real business websites
+                  </li>
+
+                <li class="project-description">
+                  A solid exercise in working with data arrays and the DOM
+                </li>
+                <li class="project-description">
+                  A deliverable that local businesses can use
+                </li>
+                </ul>
+              </p>
+              <div class="project-tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+              </div>
+              <div class="project-link-buttons">
+                <a
+                  href="https://testi-flow-henna.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-link-btn"
+                >
+                  <i class="fas fa-link"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/Phoenix-Domain/TestiFlow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="github-link-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
     </main>
 
     <!-- Footer -->
