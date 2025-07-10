@@ -52,9 +52,12 @@ textarea {
 
 :root {
   /* COLORS */
-  --body-bg-color: #101a2e;
-  --primary-text-color: #98bbf5;
-  --secondary-text-color: #f8f9fa;
+  /* Background */
+  --body-bg-color:linear-gradient( 100deg,  rgb(48, 14, 73) 37.3%, rgb(57, 9, 136) 73.5% );
+
+  /* Text */
+  --primary-text-color: #ffffff;       /* Soft mint white for emphasis */
+  --secondary-text-color: #ffffff;     /* Light gray-blue for body text */
 
   /* Sections */
   --section-padding: 5rem 1rem;
@@ -62,7 +65,7 @@ textarea {
   /* Cards */
   --card-border-radius: 0.75rem;
   --card-padding: 2rem;
-  --card-bg-color: #1c304f;
+  --card-bg-color: linear-gradient( 100deg,  rgb(27, 2, 44) 37.3%, rgb(20, 2, 49) 73.5% );    
 }
 
 /* GENERAL STYLES */
@@ -72,14 +75,14 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   height: 100dvh;
-  background-color: var(--body-bg-color);
+  background-image: var(--body-bg-color);
   overflow-x: hidden;
 }
 
 /* Header */
 
 header {
-  background-color: var(--body-bg-color);
+  background-color: rgb(50, 10, 88);
   padding: 1.25rem 0;
   color: var(--secondary-text-color);
   position: fixed;
@@ -112,7 +115,7 @@ header {
 }
 
 #logo-text:hover {
-  color: var(--primary-text-color);
+  color: rgb(167, 126, 167);
 }
 
 nav ul {
@@ -278,7 +281,7 @@ nav a:hover {
 .html-text,
 .css-text,
 .javascript-text {
-  color: var(--primary-text-color);
+  color: rgb(248, 183, 2);
   font-weight: 600;
 }
 
@@ -339,12 +342,9 @@ nav a:hover {
 
 .service-card {
   border-radius: var(--card-border-radius);
-  border-right: none;
-  border-left: none;
-  border-top: 5px solid var(--primary-text-color);
-  border-bottom: 5px solid var(--primary-text-color);
   padding: var(--card-padding);
-  box-shadow: 0 4px 6px rgba(152, 187, 245, 0.2);
+  box-shadow: 0 4px 13px rgba(248, 1, 236, 0.2),0 -4px 13px rgba(152, 187, 245, 0.2);
+  background: var(--card-bg-color);
 }
 
 .service-card i {
@@ -382,7 +382,7 @@ nav a:hover {
 }
 
 .skill-card {
-  background-color: var(--card-bg-color);
+  background: var(--card-bg-color);
   border: var(--body-bg-color);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
@@ -391,6 +391,11 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-card:hover,.service-card:hover{
+  transform: translateY(-20px) scale(1.05) !important;
 }
 
 .skill-card img {
@@ -472,6 +477,12 @@ nav a:hover {
   border: 1px solid var(--primary-text-color);
   border-radius: 0.5rem;
   font-size: 0.8125rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-tools span:hover{
+  background:var(--card-bg-color);
+  transform: translateY(-5px) scale(1.05);
 }
 
 .project-link-buttons {
@@ -495,7 +506,7 @@ nav a:hover {
 }
 
 .live-link-btn {
-  background-color: var(--card-bg-color);
+  background-color: #0d1321;
   color: var(--secondary-text-color);
 }
 
@@ -540,7 +551,7 @@ nav a:hover {
 }
 
 .contact-card {
-  background-color: #0d1321;
+  background:var(--card-bg-color);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   max-width: 37.5rem;
@@ -622,9 +633,10 @@ nav a:hover {
   width: 100%;
   font-size: 0.9375rem;
   margin: 0.3125rem 0 0.625rem;
-  background-color: #0d1321;
+  background:var(--card-bg-color);
   color: var(--secondary-text-color);
   outline: none;
+  box-shadow: 0 4px 8px rgba(248, 1, 236, 0.2),0 -4px 8px rgba(152, 187, 245, 0.2);
 }
 
 #contact-form textarea {
@@ -644,7 +656,7 @@ nav a:hover {
   margin-top: 0.75rem;
   cursor: pointer;
   width: 100%;
-  font-weight: 500;
+  font-weight: bold;
   background-color: var(--primary-text-color);
   color: var(--card-bg-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -704,8 +716,8 @@ footer {
   border-radius: 50%;
   z-index: 1000;
   text-decoration: none;
-  background-color: var(--primary-text-color);
-  color: var(--card-bg-color);
+  background: var(--card-bg-color);
+  color:whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
