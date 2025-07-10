@@ -53,4 +53,4 @@ menuToggle.addEventListener("change", () => {
 
 
   document.querySelector('.copyright').innerHTML =
-  `© ${new Date().getFullYear()} Batubo Victory. All rights reserved.`;
+  `© ${new Date().getFullYear()} <span class="myName">Batubo Victory</span><br> All rights reserved.`;

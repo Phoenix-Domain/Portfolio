@@ -615,7 +615,7 @@ nav a:hover {
   color: var(--primary-text-color);
 }
 
-.social-links li a:hover {
+.social-links li a:hover,.footer-link:hover {
   text-decoration: underline;
 }
 
@@ -719,10 +719,16 @@ footer {
   color: var(--primary-text-color);
 }
 
-.copyright {
-  font-size: 0.875rem;
+.copyright,.copyright-text {
+  font-size: 0.9rem;
   color: var(--primary-text-color);
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.myName{
+  color: var(--accent);
+  font-size:bold;
+  font-size:1rem;
 }
 
 .back-to-top-btn {
@@ -749,6 +755,10 @@ footer {
 
 .back-to-top-btn:active {
   transform: scale(0.97);
+}
+.footer-link{
+  text-decoration: none;
+  color: var(--accent);
 }
 
 /* RESPONSIVENESS */
