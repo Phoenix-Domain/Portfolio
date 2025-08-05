@@ -294,7 +294,7 @@ nav a:hover {
 
 .html-text,
 .css-text,
-.javascript-text {
+.javascript-text,.highlight {
   color: var(--accent);
   font-weight: 600;
 }
