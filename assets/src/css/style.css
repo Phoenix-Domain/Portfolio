@@ -484,6 +484,7 @@ nav a:hover {
 
 .project-tools {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
