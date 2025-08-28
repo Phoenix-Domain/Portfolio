@@ -39,7 +39,7 @@ h3 {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 button,
@@ -53,11 +53,15 @@ textarea {
 :root {
   /* COLORS */
   /* Background */
-  --body-bg-color:linear-gradient( 100deg,  rgb(48, 14, 73) 37.3%, rgb(57, 9, 136) 73.5% );
+  --body-bg-color: linear-gradient(
+    100deg,
+    rgb(48, 14, 73) 37.3%,
+    rgb(57, 9, 136) 73.5%
+  );
 
   /* Text */
-  --primary-text-color: #ffffff;       /* Soft mint white for emphasis */
-  --secondary-text-color: #ffffff;     /* Light gray-blue for body text */
+  --primary-text-color: #ffffff; /* Soft mint white for emphasis */
+  --secondary-text-color: #ffffff; /* Light gray-blue for body text */
 
   /* Sections */
   --section-padding: 5rem 1rem;
@@ -65,14 +69,18 @@ textarea {
   /* Cards */
   --card-border-radius: 0.75rem;
   --card-padding: 2rem;
-  --card-bg-color: linear-gradient( 100deg,  rgb(27, 2, 44) 37.3%, rgb(20, 2, 49) 73.5% );   
-  --accent:rgb(248, 183, 2); 
+  --card-bg-color: linear-gradient(
+    100deg,
+    rgb(27, 2, 44) 37.3%,
+    rgb(20, 2, 49) 73.5%
+  );
+  --accent: rgb(248, 183, 2);
 }
 
 /* GENERAL STYLES */
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   height: 100dvh;
@@ -111,7 +119,7 @@ header {
   font-weight: 700;
   letter-spacing: 0.05rem;
   color: var(--secondary-text-color);
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   transition: color 0.3s ease-out;
 }
 
@@ -203,19 +211,25 @@ nav a:hover {
 }
 
 .hero-name-text {
-  background:linear-gradient( 98.7deg,  rgba(6,238,243,1) 10.6%, rgba(34,126,209,1) 72.2%, rgb(1, 46, 247) 122.5%, rgba(35,44,51,1) 122.5% );
- background-clip: text;              /* Standard property */
-  -webkit-background-clip: text;  
+  background: linear-gradient(
+    98.7deg,
+    rgba(6, 238, 243, 1) 10.6%,
+    rgba(34, 126, 209, 1) 72.2%,
+    rgb(1, 46, 247) 122.5%,
+    rgba(35, 44, 51, 1) 122.5%
+  );
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent; 
+  color: transparent;
 }
 
-.hero-name-text:hover{
-  background:var(--primary-text-color);
-  background-clip: text;              /* Standard property */
-  -webkit-background-clip: text;  
+.hero-name-text:hover {
+  background: var(--primary-text-color);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent; 
+  color: transparent;
   transition: all 0.5s ease;
 }
 
@@ -238,7 +252,9 @@ nav a:hover {
   font-weight: 500;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out,
+  transition:
+    background-color 0.3s ease-out,
+    color 0.3s ease-out,
     box-shadow 0.3s ease-out;
 }
 
@@ -294,7 +310,8 @@ nav a:hover {
 
 .html-text,
 .css-text,
-.javascript-text,.highlight {
+.javascript-text,
+.highlight {
   color: var(--accent);
   font-weight: 600;
 }
@@ -345,7 +362,7 @@ nav a:hover {
   color: var(--secondary-text-color);
   font-size: 1.125rem;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .services-grid {
@@ -357,7 +374,9 @@ nav a:hover {
 .service-card {
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
-  box-shadow: 0 4px 13px rgba(248, 1, 236, 0.2),0 -4px 13px rgba(152, 187, 245, 0.2);
+  box-shadow:
+    0 4px 13px rgba(248, 1, 236, 0.2),
+    0 -4px 13px rgba(152, 187, 245, 0.2);
   background: var(--card-bg-color);
 }
 
@@ -370,7 +389,7 @@ nav a:hover {
 .service {
   font-size: 1.375rem;
   margin-bottom: 0.875rem;
-  color:var(--accent)
+  color: var(--accent);
 }
 
 .service-description {
@@ -409,7 +428,8 @@ nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.skill-card:hover,.service-card:hover{
+.skill-card:hover,
+.service-card:hover {
   transform: translateY(-20px) scale(1.05) !important;
 }
 
@@ -419,7 +439,7 @@ nav a:hover {
 
 .skill {
   margin-bottom: 0.875rem;
-  color:var(--accent)
+  color: var(--accent);
 }
 
 .skill-description {
@@ -439,7 +459,7 @@ nav a:hover {
 .projects-subtitle {
   font-size: 1.125rem;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -462,13 +482,13 @@ nav a:hover {
   height: auto;
   object-fit: cover;
   border-radius: 0.5rem;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .project-name {
   margin-bottom: 1rem;
   font-size: 1.375rem;
-  color:var(--accent)
+  color: var(--accent);
 }
 
 .project-name:hover {
@@ -497,10 +517,10 @@ nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.project-tools span:hover{
-  background:var(--card-bg-color);
+.project-tools span:hover {
+  background: var(--card-bg-color);
   transform: translateY(-5px) scale(1.05);
-  border:none;
+  border: none;
 }
 
 .project-link-buttons {
@@ -515,7 +535,9 @@ nav a:hover {
   font-weight: 500;
   margin-top: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out,
+  transition:
+    background-color 0.3s ease-out,
+    box-shadow 0.3s ease-out,
     transform 0.3s ease-out;
 }
 
@@ -569,7 +591,7 @@ nav a:hover {
 }
 
 .contact-card {
-  background:var(--card-bg-color);
+  background: var(--card-bg-color);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   max-width: 37.5rem;
@@ -616,14 +638,15 @@ nav a:hover {
   color: var(--primary-text-color);
 }
 
-.social-links li a:hover,.footer-link:hover {
+.social-links li a:hover,
+.footer-link:hover {
   text-decoration: underline;
 }
 
 .social-links i {
   margin-right: 0.625rem;
   font-size: 1.25rem;
-  color:var(--accent)
+  color: var(--accent);
 }
 
 #contact-form {
@@ -652,10 +675,12 @@ nav a:hover {
   width: 100%;
   font-size: 0.9375rem;
   margin: 0.3125rem 0 0.625rem;
-  background:var(--card-bg-color);
+  background: var(--card-bg-color);
   color: var(--secondary-text-color);
   outline: none;
-  box-shadow: 0 4px 8px rgba(248, 1, 236, 0.2),0 -4px 8px rgba(152, 187, 245, 0.2);
+  box-shadow:
+    0 4px 8px rgba(248, 1, 236, 0.2),
+    0 -4px 8px rgba(152, 187, 245, 0.2);
 }
 
 #contact-form textarea {
@@ -679,7 +704,9 @@ nav a:hover {
   background-color: var(--primary-text-color);
   color: var(--card-bg-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out,
+  transition:
+    background-color 0.3s ease-out,
+    box-shadow 0.3s ease-out,
     transform 0.3s ease-out;
 }
 
@@ -720,25 +747,26 @@ footer {
   color: var(--primary-text-color);
 }
 
-.copyright,.copyright-text {
+.copyright,
+.copyright-text {
   font-size: 0.9rem;
   color: var(--primary-text-color);
   opacity: 0.8;
 }
 
-.myName{
+.myName {
   color: var(--accent);
-  font-size:bold;
-  font-size:1rem;
+  font-size: bold;
+  font-size: 1rem;
 }
 
-.footer-links{
+.footer-links {
   color: var(--accent);
   list-style: none;
   display: flex;
   justify-content: center;
-  gap:1rem;
-  font-size:1.5rem;
+  gap: 1rem;
+  font-size: 1.5rem;
   margin: 0.8rem auto;
   cursor: pointer;
 }
@@ -753,12 +781,14 @@ footer {
   z-index: 1000;
   text-decoration: none;
   background: var(--card-bg-color);
-  color:whitesmoke;
+  color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
 }
 
 .back-to-top-btn:hover {
@@ -768,7 +798,7 @@ footer {
 .back-to-top-btn:active {
   transform: scale(0.97);
 }
-.footer-link{
+.footer-link {
   text-decoration: none;
   color: var(--accent);
 }
