@@ -1,7 +1,7 @@
 'use strict';
 
 // Uncheck the menu toggle checkbox to close the menu after a link is clicked
-document.querySelectorAll('nav a').forEach((link) => {
+document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('menu-toggle').checked = false;
   });
@@ -11,7 +11,7 @@ const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.querySelectorAll('nav a');
 
 // Close menu and remove scroll lock when any nav link is clicked
-navLinks.forEach((link) => {
+navLinks.forEach(link => {
   link.addEventListener('click', () => {
     menuToggle.checked = false;
     document.body.classList.remove('no-scroll');
