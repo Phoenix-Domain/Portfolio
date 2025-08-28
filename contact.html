@@ -35,6 +35,7 @@
       rel="preload"
       as="image"
       href="assets/images/0.webp"
+      fetchpriority="high"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -91,52 +92,6 @@
         </nav>
       </div>
     </header>
-
-    <!-- Hero -->
-    <section class="hero" id="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <h1
-          id="hero-heading"
-          data-aos="slide-down"
-          data-aos-duration="1200"
-          data-aos-easing="ease-out"
-        >
-          <span class="hero-name-text">Welcome!</span> <span class="wave">🤝</span> Pleasure to meet you <br> I'm
-          <span class="hero-name-text">Batubo Victory</span>
-        </h1>
-        <p
-          class="hero-subtext"
-          data-aos="slide-right"
-          data-aos-duration="1200"
-          data-aos-easing="ease-out"
-        >
-          A <span>Frontend Developer</span> on a Mission to Build Beautiful, Useful Websites That Solve Real Problems.
-        </p>
-        <div class="hero-buttons">
-          <a
-            href="projects.html"
-            class="view-project-btn"
-            data-aos="fade-in"
-            data-aos-duration="1200"
-            data-aos-delay="1200"
-            ><i class="fas fa-folder-open"></i> View My Portfolio</a
-          >
-          <a
-            href="assets/Batubo_Victory_-_Software_Engineer .pdf"
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-            class="resume-btn"
-            data-aos="fade-in"
-            data-aos-duration="1200"
-            data-aos-delay="1200"
-          >
-            <i class="fas fa-download"></i> Download My Resume
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- About -->
     <section id="about" data-aos="fade-up" data-aos-delay="100">
       <div class="container about-content">
@@ -246,13 +201,13 @@
           </article>
           <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
             <img
-              src="assets/images/css-3-svgrepo-com.svg"
+              src="assets/images/css-logo.svg"
               alt="CSS Logo - Styling & Layout"
               loading="lazy"
               width="50"
               height="50"
             />
-            <h3 class="skill">CSS3</h3>
+            <h3 class="skill">CSS</h3>
             <p class="skill-description">
                 Creating visually appealing layouts, smooth animations, and adaptive designs for all screen sizes.
             </p>
@@ -268,58 +223,6 @@
             <h3 class="skill">JavaScript</h3>
             <p class="skill-description">
                 Adding interactivity, dynamic features, and seamless user experiences to websites.
-            </p>
-          </article>
-          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="assets/images/icons8-bootstrap.svg"
-              alt="Bootstrap image"
-              loading="lazy"
-              width="50"
-              height="50"
-            />
-            <h3 class="skill">Bootstrap5</h3>
-            <p class="skill-description">
-                Building responsive, mobile-first layouts quickly with Bootstrap’s grid and components.
-            </p>
-          </article>
-          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="assets/images/tailwind-svgrepo-com.svg"
-              alt="tailwind logo"
-              loading="lazy"
-              width="50"
-              height="50"
-            />
-            <h3 class="skill">Tailwind CSS</h3>
-            <p class="skill-description">
-                Rapidly building modern, responsive interfaces with utility-first classes for flexible layouts, custom designs, and fast prototyping.
-            </p>
-          </article>
-          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="assets/images/react-javascript-js-framework-facebook-svgrepo-com.svg"
-              alt="React Logo - JavaScript Framework"
-              loading="lazy"
-              width="50"
-              height="50"
-            />
-            <h3 class="skill">React</h3>
-            <p class="skill-description">
-                Building interactive user interfaces with reusable components, state management, and fast updates for seamless web experiences.
-            </p>
-          </article>
-          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="assets/images/vite-svgrepo-com.svg"
-              alt="Vite Logo - Build Tool"
-              loading="lazy"
-              width="50"
-              height="50"
-            />
-            <h3 class="skill">Vite</h3>
-            <p class="skill-description">
-                Fast development and instant updates for modern web projects. Vite streamlines building and deploying React apps.
             </p>
           </article>
           <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
@@ -361,356 +264,9 @@
                 Designing modern, user-friendly interfaces and prototypes to streamline the web development process.
             </p>
           </article>
-          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="assets/images/npm-svgrepo-com.svg"
-              alt="NPM Logo"
-              loading="lazy"
-              width="50"
-              height="50"
-            />
-            <h3 class="skill">NPM</h3>
-            <p class="skill-description">
-                Managing dependencies and automating builds for efficient web development.
-            </p>
-          </article>
         </div>
       </div>
     </section>
-
-    <!-- Projects  -->
-    <section id="projects">
-      <div class="container">
-        <h2 class="projects-title">Client Work</h2>
-        <h3 class="projects-subtitle">
-            A selection of real-world client projects demonstrating my ability to deliver clean, responsive, and user-focused solutions.
-        </h3>
-        <div class="projects-grid">
-          
-          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-card-image">
-              <img
-                src="assets/images/6.webp"
-                alt="Screenshot of G&3J Designs"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-card-content">
-              <h4 class="project-name">G&3J Designs</h4>
-              <p class="project-description">
-                A modern, user-friendly concept website for G&3J Designs, an interior and graphic design studio. Built with HTML, CSS, and JavaScript, the site showcases the studio’s services, design philosophy, and portfolio in a clean, elegant layout.
-              </p>
-              <p class="project-description">
-                Key features include interactive service modals, a curated project gallery, client testimonials and a contact form.
-              </p>
-              <p class="project-description">
-                This project highlights my ability to create visually appealing, responsive experiences that reflect a brand’s aesthetic and connect with design-conscious clients.
-              </p>
-              <div class="project-tools">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
-              </div>
-              <div class="project-link-buttons">
-                <a
-                  href="https://phoenix-domain.github.io/G-3J-Designs/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="live-link-btn"
-                >
-                  <i class="fas fa-link"></i> Live Demo</a
-                >
-                <a
-                  href="https://github.com/Phoenix-Domain/G-3J-Designs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="github-link-btn"
-                >
-                  <i class="fab fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </article>
-          
-          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-card-image">
-              <img
-                src="assets/images/1.webp"
-                alt="Screenshot of Nova Brews"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-card-content">
-              <h4 class="project-name">Nova Brews</h4>
-              <p class="project-description">
-                A warm, inviting concept website for Nova Brews, a fictional specialty café. Built with HTML, CSS, and JavaScript, the site blends cozy aesthetics with clear structure to reflect the brand’s welcoming atmosphere.
-              </p>
-              <p class="project-description">
-                Key features include a dynamic menu section, featured brews, customer testimonials, and strong calls-to-action for reservations and loyalty sign-ups.
-              </p>
-              <p class="project-description">
-                This project showcases my ability to design customer-focused websites that build trust, highlight offerings, and encourage in-store visits or online engagement.
-              </p>
-              <div class="project-tools">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
-              </div>
-              <div class="project-link-buttons">
-                
-                <a
-                  href="https://phoenix-domain.github.io/Phoenix-Cafe/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="live-link-btn"
-                >
-                  <i class="fas fa-link"></i> Live Demo</a
-                >
-                <a
-                  href="https://github.com/Phoenix-Domain/Phoenix-Cafe"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="github-link-btn"
-                >
-                  <i class="fab fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2 class="projects-title">Personal Projects</h2>
-        <h3 class="projects-subtitle">
-          A few of my own builds — crafted with precision and purpose to create value through responsive design, clean architecture, and user-first thinking.
-        </h3>
-        <div class="projects-grid">
-          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-card-image">
-              <img
-                src="assets/images/TestiFlow.webp"
-                alt="Screenshot of TestiFlow project"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-card-content">
-              <h4 class="project-name">TestiFlow</h4>
-              <p class="project-description">
-                This is a simple, professional app that shows rotating customer testimonials — one click at a time — from a real dataset.
-              </p>
-              <p class="project-description">
-                It's features include:
-                <ul>
-                  <li class="project-description">
-                    A reusable component for real business websites
-                  </li>
-
-                <li class="project-description">
-                  A solid exercise in working with data arrays and the DOM
-                </li>
-                <li class="project-description">
-                  A deliverable that local businesses can use
-                </li>
-                </ul>
-              </p>
-              <div class="project-tools">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
-              </div>
-              <div class="project-link-buttons">
-                <a
-                  href="https://testi-flow-henna.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="live-link-btn"
-                >
-                  <i class="fas fa-link"></i> Live Demo</a
-                >
-                <a
-                  href="https://github.com/Phoenix-Domain/TestiFlow"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="github-link-btn"
-                >
-                  <i class="fab fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-            </article>
-
-            <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="project-card-image">
-                <img
-                  src="assets/images/project1.webp"
-                  alt="Screenshot of DashReserve project"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-card-content">
-                <h4 class="project-name">DashReserve</h4>
-                <p class="project-description">
-                  DashReserve is a simple, intuitive web application for managing client bookings. This tool allows you to add, view, search, and export your bookings, making it easy to keep track of your schedule.
-                </p>
-                <p class="project-description">
-                  It's features include:
-                  <ul>
-                    <li class="project-description">
-                      <span class="highlight">Add and Update Bookings:</span> Easily create new client bookings and modify existing ones, including details such as client name, service type, and booking date.
-                    </li>
-  
-                  <li class="project-description">
-                    <span class="highlight">Persistent Data Storage:</span> All booking information is securely stored in your browser’s local storage, ensuring your data remains available even after closing or refreshing the app.
-                  </li>
-                  <li class="project-description">
-                    <span class="highlight">Export Bookings:</span> Download your entire booking list as a CSV file for seamless integration with spreadsheets or business tools.
-                  </li>
-                  </ul>
-                </p>
-                <div class="project-tools">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JAVASCRIPT</span>
-                </div>
-                <div class="project-link-buttons">
-                  <a
-                    href="https://dash-reserve.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="live-link-btn"
-                  >
-                    <i class="fas fa-link"></i> Live Demo</a
-                  >
-                  <a
-                    href="https://github.com/Phoenix-Domain/DashReserve"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github-link-btn"
-                  >
-                    <i class="fab fa-github"></i> Code
-                  </a>
-                </div>
-              </div>
-          </article>
-          
-          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-card-image">
-              <img
-                src="assets/images/project2.webp"
-                alt="Screenshot of VortexCRM project"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-card-content">
-              <h4 class="project-name">VortexCRM</h4>
-              <p class="project-description">
-                VortexCRM is a modern, lightweight Customer Relationship Management (CRM) application built with vanilla JavaScript and Tailwind CSS. Manage your leads efficiently with a clean, responsive interface.
-              </p>
-              <p class="project-description">
-                It's features include:
-                <ul>
-                  <li class="project-description">
-                    <span class="highlight">Lead Management:</span> Create, read, update, and delete lead records
-                  </li>
-
-                <li class="project-description">
-                  <span class="highlight">Data Persistence:</span> Automatic local storage for offline capability
-                </li>
-                <li class="project-description">
-                  <span class="highlight">Status Tracking:</span> Visual status indicators (Pending, Completed, Cancelled)
-                </li>
-                </ul>
-              </p>
-              <div class="project-tools">
-                <span>HTML</span>
-                <span>TailwindCSS</span>
-                <span>JAVASCRIPT</span>
-                <span>Vite</span>
-                <span>Local Storage</span>
-              </div>
-              <div class="project-link-buttons">
-                <a
-                  href="https://vortex-crm.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="live-link-btn"
-                >
-                  <i class="fas fa-link"></i> Live Demo</a
-                >
-                <a
-                  href="https://github.com/Phoenix-Domain/VortexCRM"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="github-link-btn"
-                >
-                  <i class="fab fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-        </article>
-
-        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card-image">
-            <img
-              src="assets/images/project3.webp"
-              alt="Screenshot of ReviewHub project"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-card-content">
-            <h4 class="project-name">ReviewHub</h4>
-            <p class="project-description">
-              ReviewHub is a mini app that collects and displays customer testimonials for small businesses.
-            </p>
-            <p class="project-description">
-              It's features include:
-              <ul>
-                <li class="project-description">
-                  <span class="highlight">Submit customer feedback:</span> Users can easily submit new testimonials including their name, message, and image
-                </li>
-
-              <li class="project-description">
-                <span class="highlight">Data Persistence:</span> Automatic local storage for offline capability
-              </li>
-              <li class="project-description">
-                <span class="highlight">Instant image preview:</span> Users see a live preview of their uploaded testimonial image before submitting.
-              </li>
-              </ul>
-            </p>
-            <div class="project-tools">
-              <span>HTML</span>
-              <span>TailwindCSS</span>
-              <span>JAVASCRIPT</span>
-              <span>Vite</span>
-              <span>Local Storage</span>
-            </div>
-            <div class="project-link-buttons">
-              <a
-                href="https://review-hub-alpha.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="live-link-btn"
-              >
-                <i class="fas fa-link"></i> Live Demo</a
-              >
-              <a
-                href="https://github.com/Phoenix-Domain/ReviewHub"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="github-link-btn"
-              >
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
-          </div>
-      </article>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -860,6 +416,8 @@
       </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer>
       <p class="copyright-text">
@@ -944,10 +502,12 @@
         <i class="fas fa-chevron-up"></i>
       </a>
     </footer>
+
+    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ once: true });
     </script>
-    <script src="assets/src/js/main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
