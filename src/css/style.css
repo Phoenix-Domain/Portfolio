@@ -140,7 +140,6 @@ nav a:hover {
 .nav-links .active {
   color: var(--primary-text-color);
 }
-
 .no-scroll {
   overflow: hidden;
   height: 100dvh;
