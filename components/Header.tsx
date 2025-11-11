@@ -20,7 +20,7 @@ const Header: React.FC = () => {
       <nav className="container mx-auto px-6 md:px-10 lg:px-20 py-4 mt-4 bg-black/30 backdrop-blur-lg rounded-full border border-white/10">
         <div className="flex justify-between items-center">
           <a href="#hero" className="font-poppins text-xl font-bold tracking-wider">
-            <img src="public\Hero\Frame 107.png" alt="Logo" className='w-[150px]' />
+            <img src="/Hero/Frame 107.png" alt="Logo" className='w-[150px]' />
           </a>
           <ul className="hidden md:flex items-center space-x-8 text-sm">
             <li><a href="#work" className="hover:text-[#9B30FF] transition-colors duration-300">Work</a></li>
