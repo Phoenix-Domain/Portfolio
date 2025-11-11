@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# Batubo Victory - Personal Portfolio
 
-This contains everything you need to run your app locally.
+## Overview
+A personal portfolio website showcasing projects, skills, and professional experience.
 
-View your app in AI Studio: https://ai.studio/apps/drive/16HDi3wDttStx9GZARCzSgKrz6ua88iET
+## Features
+- Responsive design
+- Project showcase
+- Skills section
+- Contact information
+- Clean and modern UI
 
-## Run Locally
+## Getting Started
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Customize content with your information
 
-**Prerequisites:**  Node.js
+## Structure
+```
+├── index.html
+├── css/
+├── js/
+└── assets/
+```
 
+## Customization
+Replace placeholder text and images with your own content.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Contact
+Update contact information in the footer section.
+
+## License
+Include your preferred license here.
