@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+body {
+        background-color: #0A0A0A;
+        font-family: 'Inter', sans-serif;
+        color: #E2E8F0; /* A soft white for better readability on dark bg */
+      }
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      .font-inter {
+        font-family: 'Inter', sans-serif;
+      }
+      .glow-purple {
+        text-shadow: 0 0 8px rgba(155, 48, 255, 0.6), 0 0 20px rgba(155, 48, 255, 0.4);
+      }
+      .glow-green {
+        box-shadow: 0 0 15px rgba(50, 232, 117, 0.5), 0 0 30px rgba(50, 232, 117, 0.3);
+      }
+      .tools-carousel-track {
+        animation: scroll 40s linear infinite;
+      }
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 7)); }
+    }
